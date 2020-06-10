@@ -1,0 +1,2586 @@
+[
+    [491, 74, 159, 937, 773, 234, 70, 67, 69, 635, 1778, 694, 596, 71, 1677, 853, 550, 2543, 1763, 616, 5626, 72, 3031, 9135, 12591, 47807, 12395, 10129, 7666, 2631, 3027, 909, 936, 3025, 68, 73, 2991, 10882, 5924, 772, 204, 6117, 33177, 16012, 8392, 55159],
+    [
+        ["theprogrammer_core", [
+            ["\theprogrammer_core\files", "theprogrammer_core", [
+                ["clientInit", -2],
+                ["localize", -2],
+                ["localizeTexture", -2]
+            ], 3.0]
+        ]],
+        ["Max_Settings_EntreprisesMarkers", [
+            ["\Entreprises_Markers\client", "max_entMarkers", [
+                ["entreprisesmarkers", -2]
+            ], 2.0],
+            ["\Entreprises_Markers\client", "tp_corpMarkers", [
+                ["companyMarkersAction", -2]
+            ], 3.0],
+            ["\Entreprises_Markers\server", "tp_corpMarkers", [
+                ["companyMarkersInit", 2, "init_server"]
+            ], 3.0]
+        ]],
+        ["CfgGPS", [
+            ["\Advanced_GPS\client", "gps", [
+                ["init", -2, "init_client_spawn"]
+            ], 2.0],
+            ["\Advanced_GPS\client\gps", "gps", [
+                ["deletePathHelpers", -2],
+                ["tracking", -2],
+                ["main", -2],
+                ["killGPS", -2],
+                ["getConfigSetting", -2],
+                ["getSetting", -2],
+                ["setSetting", -2],
+                ["localize", -2],
+                ["log", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\misc", "gps", [
+                ["refreshCache", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\menu\hud", "gps_menu", [
+                ["setGPSInfo", -2],
+                ["loadHud", -2],
+                ["openHud", -2],
+                ["closeHud", -2],
+                ["drawPath", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\menu\gps", "gps_menu", [
+                ["gpsHelp", -2],
+                ["loadGPSMenu", -2],
+                ["loadNavMenu", -2],
+                ["loadOptionsMenu", -2],
+                ["loadControlsMenu", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\menu\quicknav", "gps_menu", [
+                ["quickNavCreate", -2],
+                ["quickNavExecuteCurrentOption", -2],
+                ["quickNavNextOption", -2],
+                ["loadQuickNav", -2],
+                ["handleQuickNavActions", -2],
+                ["addQuickNavOption", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\misc", "misc", [
+                ["nearestLocation", -2],
+                ["nearestRoadInArray", -2],
+                ["metersToKilometers", -2],
+                ["midPoint", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\misc\EditDialog", "misc", [
+                ["editDialog", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\misc\KeyChoice", "misc", [
+                ["chooseKey", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\misc\ColorPicker", "misc", [
+                ["colorPick", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\gps_core", "gps_core", [
+                ["mapRoutes", -2],
+                ["mapNodeValues", -2],
+                ["roadsConnectedTo", -2],
+                ["insertFakeNode", -2],
+                ["getAllRoads", -2],
+                ["generateNodePath", -2],
+                ["generatePathHelpers", -2],
+                ["log", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\gps_core\algorithms\AStar", "gps_core", [
+                ["AStar", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\gps_core\algorithms\RDP", "gps_core", [
+                ["RDP", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\gps_core\misc", "misc", [
+                ["createmarker", -2],
+                ["getRoadBoundingBoxWorld", -2],
+                ["arePolygonsOverlapping", -2],
+                ["getRoadDir", -2],
+                ["pointLineDist", -2],
+                ["callScriptedEventHandlerReturn", -2],
+                ["isHighWay", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\gps_core\misc\PriorityQueue", "misc", [
+                ["PQ_get", -2],
+                ["PQ_insert", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\gps_core\misc\Queue", "misc", [
+                ["Q_get", -2],
+                ["Q_insert", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client\gps_core\misc\hashTable", "misc", [
+                ["hashTable_find", -2],
+                ["hashTable_set", -2],
+                ["hashTable_exists", -2],
+                ["hashTable_create", -2],
+                ["hashTable_deleteNameSpaces", -2]
+            ], 2.0],
+            ["\Advanced_GPS\client", "gps", [
+                ["init", -2, "init_client_spawn"]
+            ], 2.1],
+            ["\Advanced_GPS\client\gps", "gps", [
+                ["deletePathHelpers", -2],
+                ["tracking", -2],
+                ["main", -2],
+                ["killGPS", -2],
+                ["getConfigSetting", -2],
+                ["getSetting", -2],
+                ["setSetting", -2],
+                ["localize", -2],
+                ["log", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\misc", "gps", [
+                ["refreshCache", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\menu\hud", "gps_menu", [
+                ["setGPSInfo", -2],
+                ["loadHud", -2],
+                ["openHud", -2],
+                ["closeHud", -2],
+                ["drawPath", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\menu\gps", "gps_menu", [
+                ["gpsHelp", -2],
+                ["loadGPSMenu", -2],
+                ["loadNavMenu", -2],
+                ["loadOptionsMenu", -2],
+                ["loadControlsMenu", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\menu\quicknav", "gps_menu", [
+                ["quickNavCreate", -2],
+                ["quickNavExecuteCurrentOption", -2],
+                ["quickNavNextOption", -2],
+                ["loadQuickNav", -2],
+                ["handleQuickNavActions", -2],
+                ["addQuickNavOption", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\misc", "misc", [
+                ["nearestLocation", -2],
+                ["nearestRoadInArray", -2],
+                ["metersToKilometers", -2],
+                ["midPoint", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\misc\EditDialog", "misc", [
+                ["editDialog", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\misc\KeyChoice", "misc", [
+                ["chooseKey", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\misc\ColorPicker", "misc", [
+                ["colorPick", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\gps_core", "gps_core", [
+                ["mapRoutes", -2],
+                ["mapNodeValues", -2],
+                ["roadsConnectedTo", -2],
+                ["insertFakeNode", -2],
+                ["getAllRoads", -2],
+                ["generateNodePath", -2],
+                ["generatePathHelpers", -2],
+                ["log", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\gps_core\algorithms\AStar", "gps_core", [
+                ["AStar", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\gps_core\algorithms\RDP", "gps_core", [
+                ["RDP", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\gps_core\misc", "misc", [
+                ["createmarker", -2],
+                ["getRoadBoundingBoxWorld", -2],
+                ["arePolygonsOverlapping", -2],
+                ["getRoadDir", -2],
+                ["pointLineDist", -2],
+                ["callScriptedEventHandlerReturn", -2],
+                ["isHighWay", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\gps_core\misc\PriorityQueue", "misc", [
+                ["PQ_get", -2],
+                ["PQ_insert", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\gps_core\misc\Queue", "misc", [
+                ["Q_get", -2],
+                ["Q_insert", -2]
+            ], 2.1],
+            ["\Advanced_GPS\client\gps_core\misc\hashTable", "misc", [
+                ["hashTable_find", -2],
+                ["hashTable_set", -2],
+                ["hashTable_exists", -2],
+                ["hashTable_create", -2],
+                ["hashTable_deleteNameSpaces", -2]
+            ], 2.1]
+        ]],
+        ["Max_Settings_Interpol", [
+            ["\Interpol\client", "max_interpol", [
+                ["interpolInsert", -2],
+                ["interpolEdit", -2],
+                ["interpolMenuList", -2],
+                ["interpolAddMenu", -2],
+                ["interpolLbChanged", -2],
+                ["interpolCrimeMenu", -2],
+                ["interpolEditMenu", -2],
+                ["interpolSearch", -2],
+                ["interpolAddCrime", -2],
+                ["interpolDeleteCrime", -2],
+                ["interpolChangeStatus", -2],
+                ["getPlayerCrimes", -2],
+                ["interpolLbChangedCrimes", -2],
+                ["interpolSendMSG", -2]
+            ], 2.0],
+            ["\Interpol\server", "max_interpol", [
+                ["updateInterpol", 2],
+                ["getCrimes", 2],
+                ["updateCrimes", 2],
+                ["getInterpol", 2],
+                ["autoCrimes", 2]
+            ], 2.0]
+        ]],
+        ["Max_Settings_Phone_Advanced", [
+            ["\Advanced_Phone\client", "max_phone", [
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["setupCellPhone", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2]
+            ], 2.0],
+            ["\Advanced_Phone\server", "max_phone", [
+                ["saveCellPhone", 2],
+                ["request", 2],
+                ["updatePhone", 2],
+                ["getRealTime", 2],
+                ["cellPhoneRequest", 2],
+                ["updateForfait", 2]
+            ], 2.0],
+            ["\Advanced_Phone\client", "max_phone", [
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["setupCellPhone", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2]
+            ], 2.1],
+            ["\Advanced_Phone\server", "max_phone", [
+                ["saveCellPhone", 2],
+                ["request", 2],
+                ["updatePhone", 2],
+                ["getRealTime", 2],
+                ["cellPhoneRequest", 2],
+                ["updateForfait", 2]
+            ], 2.1],
+            ["\Advanced_Phone\client", "max_phone", [
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["setupCellPhone", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2]
+            ], 2.2],
+            ["\Advanced_Phone\server", "max_phone", [
+                ["saveCellPhone", 2],
+                ["request", 2],
+                ["updatePhone", 2],
+                ["getRealTime", 2],
+                ["cellPhoneRequest", 2],
+                ["updateForfait", 2]
+            ], 2.2],
+            ["\Advanced_Phone\client", "max_phone", [
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2],
+                ["findInContacts", -2],
+                ["addGroupCall", -2],
+                ["missedCall", -2]
+            ], 3.0],
+            ["\Advanced_Phone\server", "max_phone", [
+                ["deleteMessageHistory", 2],
+                ["insertMessageHistory", 2],
+                ["request", 2],
+                ["updatePhone", 2],
+                ["updateForfait", 2]
+            ], 3.0],
+            ["\Advanced_Phone\client", "max_phone", [
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2],
+                ["findInContacts", -2],
+                ["addGroupCall", -2],
+                ["missedCall", -2]
+            ], 3.1],
+            ["\Advanced_Phone\server", "max_phone", [
+                ["deleteMessageHistory", 2],
+                ["insertMessageHistory", 2],
+                ["request", 2],
+                ["updatePhone", 2],
+                ["updateForfait", 2],
+                ["deleteCallHistory", 2],
+                ["insertCallHistory", 2]
+            ], 3.1]
+        ]],
+        ["Max_Settings_GiveVehicle", [
+            ["\Give_Vehicle\client", "max_giveVeh", [
+                ["vehicleGiveTo", -2],
+                ["vehicleGive", -2],
+                ["infoBack", -2],
+                ["receiveVeh", -2]
+            ], 2.0],
+            ["\Give_Vehicle\server", "max_giveVeh", [
+                ["giveVehicle", 2]
+            ], 2.0],
+            ["\Give_Vehicle\client", "max_giveVeh", [
+                ["vehicleGiveTo", -2],
+                ["vehicleGive", -2],
+                ["infoBack", -2],
+                ["receiveVeh", -2]
+            ], 2.1],
+            ["\Give_Vehicle\server", "max_giveVeh", [
+                ["giveVehicle", 2]
+            ], 2.1],
+            ["\Key_Transfer\client", "max_keytransfer", [
+                ["keyTransferAction", -2],
+                ["keyTransferMenu", -2],
+                ["ownerDisplayResult", -2],
+                ["receiveConfirmation", -2],
+                ["isVehOrHouse", -2]
+            ], 3.0],
+            ["\Key_Transfer\server", "max_keytransfer", [
+                ["giveVehicle", 2],
+                ["giveHouse", 2]
+            ], 3.0],
+            ["\Key_Transfer\client", "max_keytransfer", [
+                ["keyTransferAction", -2],
+                ["keyTransferMenu", -2],
+                ["ownerDisplayResultGive", -2],
+                ["receiveConfirmationGive", -2],
+                ["isVehOrHouse", -2],
+                ["giveTemporaryKeys", -2],
+                ["keyTransferTemporaryAction", -2],
+                ["receiveConfirmationKeys", -2],
+                ["ownerDisplayResultKeys", -2],
+                ["temporaryKeysMenu", -2],
+                ["temporaryKeysLBChange", -2],
+                ["unimpoundVehicle", -2],
+                ["openTemporaryKeysMenu", -2],
+                ["giveVehicleKey", -2]
+            ], 4.0],
+            ["\Key_Transfer\server", "max_keytransfer", [
+                ["giveVehicle", 2],
+                ["giveHouse", 2],
+                ["addTemporaryKeys", 2],
+                ["getTemporaryKeys", 2, "init_client_remoteExec", ["player"]],
+                ["getTemporaryVehicles", 2],
+                ["fetchGivenKeys", 2]
+            ], 4.0]
+        ]],
+        ["Max_Settings_PermisPoints", [
+            ["\Points_License\client", "max_permisPoints", [
+                ["pointsRemove", -2],
+                ["infoPermis", -2],
+                ["hintInfoPermis", -2],
+                ["hintPointsRemove", -2],
+                ["infoPointsRemove", -2],
+                ["pointsPermis", -2],
+                ["requestAdd", -2],
+                ["searchPlayersMenu", -2]
+            ], 2.0],
+            ["\Points_License\server", "max_permisPoints", [
+                ["getPermisInfo", 2],
+                ["updatePointsPermis", 2],
+                ["updatePermis", 2],
+                ["request", 2]
+            ], 2.0],
+            ["\Points_License\client", "max_permisPoints", [
+                ["getPermisInfo", -2],
+                ["getInfoPermis", -2],
+                ["hintPointsRemoved", -2],
+                ["infoPointsRemove", -2],
+                ["initPointsLicense", -2, "init_client_spawn"],
+                ["permisLicenseCheck", -2],
+                ["pointsPermis", -2],
+                ["pointsRemove", -2],
+                ["removePointsLbChanged", -2],
+                ["requestAdd", -2],
+                ["resultInfoPermis", -2],
+                ["searchPlayersMenu", -2],
+                ["getAllPoints", -2]
+            ], 3.0],
+            ["\Points_License\server", "max_permisPoints", [
+                ["addPermisCrime", 2],
+                ["savePoints", 2],
+                ["request", 2],
+                ["searchPermisInfo", 2]
+            ], 3.0]
+        ]],
+        ["Max_Settings_Immatriculation", [
+            ["\License_Plates\client", "max_immat", [
+                ["infoPlate", -2],
+                ["newPlate", -2],
+                ["maskPlate", -2],
+                ["verifPlate", -2],
+                ["plateSearchMenu", -2],
+                ["vehicleBuyImmatriculation", -2]
+            ], 2.0],
+            ["\License_Plates\server", "max_immat", [
+                ["getPlateInfo", 2],
+                ["updatePlate", 2],
+                ["initVehicleImmatriculation", 2]
+            ], 2.0],
+            ["\License_Plates\client", "max_immat", [
+                ["infoPlate", -2],
+                ["newPlate", -2],
+                ["customPlate", -2],
+                ["customPlateConfirm", -2],
+                ["customPlateMenu", -2],
+                ["maskPlate", -2],
+                ["verifPlate", -2],
+                ["plateSearchMenu", -2],
+                ["vehicleBuyImmatriculation", -2],
+                ["resultSearch", -2]
+            ], 3.0],
+            ["\License_Plates\server", "max_immat", [
+                ["getPlateInfo", 2],
+                ["isPlateExist", -2],
+                ["updatePlate", 2],
+                ["initVehicleImmatriculation", 2],
+                ["checkAllPlatesDatabase", 2, "init_server"]
+            ], 3.0],
+            ["\License_Plates\client", "max_immat", [
+                ["infoPlate", -2],
+                ["newPlate", -2],
+                ["customPlate", -2],
+                ["customPlateConfirm", -2],
+                ["customPlateMenu", -2],
+                ["maskPlate", -2],
+                ["verifPlate", -2],
+                ["plateSearchMenu", -2],
+                ["vehicleBuyImmatriculation", -2],
+                ["resultSearch", -2],
+                ["generateRandomPlate", -2]
+            ], 3.1],
+            ["\License_Plates\server", "max_immat", [
+                ["getPlateInfo", 2],
+                ["isPlateExist", -2],
+                ["updatePlate", 2],
+                ["initVehicleImmatriculation", 2],
+                ["checkAllPlatesDatabase", 2, "init_server"]
+            ], 3.1]
+        ]],
+        ["Max_Settings_Facture", [
+            ["\Billing_System\client", "max_facture", [
+                ["checkFactures", -2],
+                ["factureListMenu", -2],
+                ["factureMenu", -2],
+                ["factureResult", -2],
+                ["lbChangedFacture", -2],
+                ["payFacture", -2],
+                ["refuseFacture", -2],
+                ["resultGet", -2],
+                ["sendFacture", -2]
+            ], 2.0],
+            ["\Billing_System\server", "max_facture", [
+                ["getFacturesReceived", 2],
+                ["getFacturesSended", 2],
+                ["insertFacture", 2],
+                ["updateFacture", 2],
+                ["updatePlayer", 2],
+                ["getWaitingFactures", 2, "init_client_remoteExec", ["pid"]]
+            ], 2.0],
+            ["\Billing_System\client", "max_facture", [
+                ["checkFactures", -2],
+                ["factureListMenu", -2],
+                ["factureMenu", -2],
+                ["factureResult", -2],
+                ["lbChangedFacture", -2],
+                ["payFacture", -2],
+                ["refuseFacture", -2],
+                ["resultGet", -2],
+                ["sendFacture", -2]
+            ], 2.1],
+            ["\Billing_System\server", "max_facture", [
+                ["getFacturesReceived", 2],
+                ["getFacturesSended", 2],
+                ["insertFacture", 2],
+                ["updateFacture", 2],
+                ["updatePlayer", 2],
+                ["getWaitingFactures", 2, "init_client_remoteExec", ["pid"]]
+            ], 2.1],
+            ["\Billing_System\client", "max_facture", [
+                ["checkFactures", -2],
+                ["factureListMenu", -2],
+                ["factureMenu", -2],
+                ["factureResult", -2],
+                ["lbChangedFacture", -2],
+                ["payFacture", -2],
+                ["refuseFacture", -2],
+                ["resultGet", -2],
+                ["sendFacture", -2]
+            ], 3.0],
+            ["\Billing_System\server", "max_facture", [
+                ["getFacturesReceived", 2],
+                ["getFacturesSended", 2],
+                ["insertFacture", 2],
+                ["updateFacture", 2],
+                ["updatePlayer", 2],
+                ["getWaitingFactures", 2, "init_client_remoteExec", ["pid"]]
+            ], 3.0]
+        ]],
+        ["Max_Settings_Contravention", [
+            ["\Ticket_System\client", "max_contrav", [
+                ["sendFineMenu", -2],
+                ["sendFine", -2]
+            ], 2.0],
+            ["\Ticket_System\server", "max_contrav", [
+                ["updateContravention", 2]
+            ], 2.0],
+            ["\Ticket_System\client", "max_contrav", [
+                ["sendFineMenu", -2],
+                ["sendFine", -2]
+            ], 2.1],
+            ["\Ticket_System\server", "max_contrav", [
+                ["updateContravention", 2]
+            ], 2.1]
+        ]],
+        ["Max_Settings_Restrain", [
+            ["\Restrain_System\client", "max_restrain", [
+                ["restrain", -2],
+                ["surrender", -2]
+            ], 2.0],
+            ["\Restrain_System\client", "max_restrain", [
+                ["restrain", -2],
+                ["surrender", -2],
+                ["restrainAction", -2],
+                ["initRestrain", -2, "init_client_spawn"]
+            ], 2.1],
+            ["\Restrain_System\client", "max_restrain", [
+                ["restrain", -2],
+                ["surrender", -2],
+                ["restrainAction", -2],
+                ["initRestrain", -2, "init_client_spawn"]
+            ], 2.2],
+            ["\Restrain_System\client", "max_restrain", [
+                ["restrain", -2],
+                ["surrender", -2],
+                ["restrainAction", -2],
+                ["initRestrain", -2, "init_client_spawn"],
+                ["unrestrain", -2]
+            ], 3.0]
+        ]],
+        ["The_Programmer_Settings_Iphone", [
+            ["\Iphone_X\client", "the_programmer_iphone", [
+                ["Licences_Menu", -2],
+                ["PayEasy", -2],
+                ["phone_init", -2],
+                ["DonnerArgent", -2],
+                ["reboot", -2],
+                ["chargement", -2],
+                ["message", -2],
+                ["updateinventaire", -2],
+                ["historiquemenu", -2],
+                ["messagemenu", -2],
+                ["settingsMenu", -2],
+                ["contactmenu", -2],
+                ["gangMenu", -2],
+                ["addContact", -2],
+                ["removeContact", -2],
+                ["resetContact", -2],
+                ["composeNumber", -2],
+                ["receiveCallIphone", -2],
+                ["inCallIphone", -2],
+                ["endCallButton", -2],
+                ["refuseReceivedCall", -2],
+                ["contactmenucall", -2],
+                ["weatherMenu", -2],
+                ["cameraMenu", -2],
+                ["takeSelfie", -2],
+                ["clavierMenu", -2],
+                ["dayOfWeek", -2],
+                ["Settings_General", -2],
+                ["Settings_Menu", -2],
+                ["settings_LBChanged", -2],
+                ["s_onCharSetting", -2],
+                ["settings_Menu_Options", -2],
+                ["setupSwipeEvent", -2]
+            ], 2.0],
+            ["\Iphone_X\client", "the_programmer_iphone", [
+                ["Licences_Menu", -2],
+                ["PayEasy", -2],
+                ["phone_init", -2],
+                ["DonnerArgent", -2],
+                ["reboot", -2],
+                ["chargement", -2],
+                ["message", -2],
+                ["updateinventaire", -2],
+                ["historiquemenu", -2],
+                ["messagemenu", -2],
+                ["settingsMenu", -2],
+                ["contactmenu", -2],
+                ["gangMenu", -2],
+                ["addContact", -2],
+                ["removeContact", -2],
+                ["resetContact", -2],
+                ["composeNumber", -2],
+                ["receiveCallIphone", -2],
+                ["inCallIphone", -2],
+                ["endCallButton", -2],
+                ["refuseReceivedCall", -2],
+                ["contactmenucall", -2],
+                ["weatherMenu", -2],
+                ["cameraMenu", -2],
+                ["takeSelfie", -2],
+                ["clavierMenu", -2],
+                ["dayOfWeek", -2],
+                ["Settings_General", -2],
+                ["Settings_Menu", -2],
+                ["settings_LBChanged", -2],
+                ["s_onCharSetting", -2],
+                ["settings_Menu_Options", -2],
+                ["setupSwipeEvent", -2]
+            ], 2.1],
+            ["\Iphone_X\client", "the_programmer_iphone", [
+                ["Licences_Menu", -2],
+                ["PayEasy", -2],
+                ["phone_init", -2],
+                ["DonnerArgent", -2],
+                ["reboot", -2],
+                ["chargement", -2],
+                ["message", -2],
+                ["updateinventaire", -2],
+                ["historiquemenu", -2],
+                ["messagemenu", -2],
+                ["settingsMenu", -2],
+                ["contactmenu", -2],
+                ["gangMenu", -2],
+                ["addContact", -2],
+                ["removeContact", -2],
+                ["resetContact", -2],
+                ["composeNumber", -2],
+                ["receiveCallIphone", -2],
+                ["inCallIphone", -2],
+                ["endCallButton", -2],
+                ["refuseReceivedCall", -2],
+                ["contactmenucall", -2],
+                ["weatherMenu", -2],
+                ["cameraMenu", -2],
+                ["takeSelfie", -2],
+                ["clavierMenu", -2],
+                ["dayOfWeek", -2],
+                ["Settings_General", -2],
+                ["Settings_Menu", -2],
+                ["settings_LBChanged", -2],
+                ["s_onCharSetting", -2],
+                ["settings_Menu_Options", -2],
+                ["setupSwipeEvent", -2]
+            ], 2.2],
+            ["\Iphone_X\client", "the_programmer_iphone", [
+                ["Licences_Menu", -2],
+                ["PayEasy", -2],
+                ["phone_init", -2],
+                ["DonnerArgent", -2],
+                ["reboot", -2],
+                ["chargement", -2],
+                ["message", -2],
+                ["updateinventaire", -2],
+                ["historiquemenu", -2],
+                ["messagemenu", -2],
+                ["contactmenu", -2],
+                ["gangMenu", -2],
+                ["addContact", -2],
+                ["removeContact", -2],
+                ["resetContact", -2],
+                ["composeNumber", -2],
+                ["receiveCallIphone", -2],
+                ["inCallIphone", -2],
+                ["endCallButton", -2],
+                ["refuseReceivedCall", -2],
+                ["contactmenucall", -2],
+                ["weatherMenu", -2],
+                ["cameraMenu", -2],
+                ["takeSelfie", -2],
+                ["clavierMenu", -2],
+                ["dayOfWeek", -2],
+                ["Settings_General", -2],
+                ["Settings_Menu", -2],
+                ["settings_LBChanged", -2],
+                ["s_onCharSetting", -2],
+                ["settings_Menu_Options", -2],
+                ["setupSwipeEvent", -2]
+            ], 2.3],
+            ["\Iphone_X\client", "the_programmer_iphone", [
+                ["phone_date", -2],
+                ["phone_init", -2],
+                ["phone_loading", -2],
+                ["phone_reboot", -2]
+            ], 3.0],
+            ["\Iphone_X\client\Apps", "the_programmer_iphone", [
+                ["apps_camera", -2],
+                ["apps_gang", -2],
+                ["apps_give", -2],
+                ["apps_keyMenu", -2],
+                ["apps_license", -2],
+                ["apps_message", -2],
+                ["apps_payEasy", -2],
+                ["apps_takeSelfie", -2],
+                ["apps_weather", -2],
+                ["updateinventaire", -2],
+                ["apps_pasteme", -2]
+            ], 3.0],
+            ["\Iphone_X\client\Phone_Compatibility", "the_programmer_iphone", [
+                ["addContact", -2],
+                ["composeNumber", -2],
+                ["contact_menu_call", -2],
+                ["contact_menu", -2],
+                ["endCallButton", -2],
+                ["historiqueMenu", -2],
+                ["inCallIphone", -2],
+                ["keyboard", -2],
+                ["message_menu", -2],
+                ["receiveCallPhone", -2],
+                ["refuseReceivedCall", -2],
+                ["removeContact", -2],
+                ["resetContact", -2],
+                ["acceptCall", -2]
+            ], 3.0],
+            ["\Iphone_X\client\Settings", "the_programmer_iphone", [
+                ["settings_general", -2],
+                ["settings_lbchanged", -2],
+                ["settings_menu", -2],
+                ["settings_menu_p2", -2],
+                ["settings_onCharSetting", -2],
+                ["setupSwipeEvent", -2]
+            ], 3.0]
+        ]],
+        ["Max_Settings_EffetsEcran", [
+            ["\Screen_Effects\client", "theprogrammer_effects", [
+                ["cannabis", -2],
+                ["heroine", -2],
+                ["cocaine", -2],
+                ["alcool", -2],
+                ["drogueTest", -2],
+                ["alcoolTest", -2],
+                ["assomer", -2],
+                ["tazer", -2]
+            ], 2.0],
+            ["\Screen_Effects\client", "theprogrammer_effects", [
+                ["cannabis", -2],
+                ["heroine", -2],
+                ["cocaine", -2],
+                ["alcool", -2],
+                ["drogueTest", -2],
+                ["alcoolTest", -2],
+                ["assomer", -2],
+                ["tazer", -2],
+                ["tremblements", -2]
+            ], 2.1]
+        ]],
+        ["leboncoin_depot", [
+            ["\Leboncoin\client", "max_leboncoin", [
+                ["leboncoinAnnonces", -2],
+                ["putPhoneNumber", -2]
+            ], 2.0],
+            ["\Leboncoin\server", "max_leboncoin", [
+                ["updateAnnonces", 2],
+                ["getAnnonces", 2]
+            ], 2.0],
+            ["\Leboncoin\client", "max_leboncoin", [
+                ["leboncoinAnnonces", -2],
+                ["putPhoneNumber", -2]
+            ], 2.1],
+            ["\Leboncoin\server", "max_leboncoin", [
+                ["updateAnnonces", 2],
+                ["getAnnonces", 2]
+            ], 2.1]
+        ]],
+        ["Max_Settings_FuelStations", [
+            ["\Fuel_Stations\client", "max_fuelstations", [
+                ["refuelOnSliderChange", -2],
+                ["refuelStationMenu", -2],
+                ["refuelCar", -2],
+                ["fuelOnSliderChange", -2],
+                ["fuelLBChanged", -2],
+                ["openPumpMenu", -2],
+                ["refuelStation", -2],
+                ["onKeyUpFuel", -2],
+                ["refuelLBChanged", -2],
+                ["onKeyUpRefuel", -2],
+                ["getFuelType", -2],
+                ["fuelConsumption", -2],
+                ["setupFuelStations", -2, "init_client_spawn"],
+                ["displayLowPumps", -2]
+            ], 2.0],
+            ["\Fuel_Stations\server", "max_fuelstations", [
+                ["initFuelStations", 2, "init_server"],
+                ["updateFuelStation", 2]
+            ], 2.0],
+            ["\Fuel_Stations\client", "max_fuelstations", [
+                ["refuelOnSliderChange", -2],
+                ["refuelStationMenu", -2],
+                ["refuelCar", -2],
+                ["fuelOnSliderChange", -2],
+                ["fuelLBChanged", -2],
+                ["openPumpMenu", -2],
+                ["refuelStation", -2],
+                ["onKeyUpFuel", -2],
+                ["refuelLBChanged", -2],
+                ["onKeyUpRefuel", -2],
+                ["getFuelType", -2],
+                ["fuelConsumption", -2],
+                ["setupFuelStations", -2, "init_client_spawn"],
+                ["displayLowPumps", -2]
+            ], 2.1],
+            ["\Fuel_Stations\server", "max_fuelstations", [
+                ["initFuelStations", 2, "init_server"],
+                ["updateFuelStation", 2]
+            ], 2.1],
+            ["\Fuel_Stations\client", "max_fuelstations", [
+                ["refuelOnSliderChange", -2],
+                ["refuelStationMenu", -2],
+                ["refuelCar", -2],
+                ["fuelOnSliderChange", -2],
+                ["fuelLBChanged", -2],
+                ["openPumpMenu", -2],
+                ["refuelStation", -2],
+                ["onKeyUpFuel", -2],
+                ["refuelLBChanged", -2],
+                ["onKeyUpRefuel", -2],
+                ["getFuelType", -2],
+                ["fuelConsumption", -2],
+                ["setupFuelStations", -2, "init_client_spawn"],
+                ["displayLowPumps", -2],
+                ["setVehicleFuel", -2]
+            ], 2.2],
+            ["\Fuel_Stations\server", "max_fuelstations", [
+                ["initFuelStations", 2, "init_server"],
+                ["updateFuelStation", 2]
+            ], 2.2]
+        ]],
+        ["Max_Settings_Entreprise", [
+            ["\Company_System\client", "max_entreprise", [
+                ["createEntreprise", -2],
+                ["initEntreprises", -2, "init_client_spawn"],
+                ["createEntrepriseMenu", -2],
+                ["editEntrepriseMenu", -2],
+                ["stockageBuy", -2],
+                ["stockageSell", -2],
+                ["openStockage", -2],
+                ["stockageRetrieve", -2],
+                ["stockageInventory", -2],
+                ["entrepriseLeave", -2],
+                ["entrepriseDisband", -2],
+                ["memberEntrepriseMenu", -2],
+                ["sendInvitePlayerEntreprise", -2],
+                ["openMenu", -2],
+                ["invitePlayerEntreprise", -2],
+                ["addAllowedItem", -2],
+                ["removeAllowedItem", -2],
+                ["entrepriseKick", -2],
+                ["entrepriseBeKicked", -2],
+                ["takeMoneyFromEntACC", -2],
+                ["putMoneyToEntACC", -2],
+                ["displayAllAvailablesPositions", -2],
+                ["buyNewPosition", -2],
+                ["objectsPlaceMenu", -2],
+                ["lbChangedPlaceMenu", -2],
+                ["removeObject", -2],
+                ["placeObject", -2],
+                ["placeObjectCompleted", -2],
+                ["entrepriseStatus", -2],
+                ["entrepriseAddAction", -2],
+                ["storeVehicleEnt", -2],
+                ["impoundMenuEntreprise", -2],
+                ["garageLBChangeEntreprise", -2],
+                ["unimpoundEntreprise", -2],
+                ["entrepriseSetAssociates", -2],
+                ["entrepriseRemoveAssociates", -2],
+                ["openStockage2", -2],
+                ["stockageInventory2", -2],
+                ["stockageRetrieve2", -2],
+                ["stockageSell2", -2],
+                ["lbChangedCreateMenu", -2],
+                ["changeTypeEntreprise", -2],
+                ["updateRank", -2],
+                ["historicResultMenu", -2],
+                ["historicMenu", -2]
+            ], 2.0],
+            ["\Company_System\server", "max_entreprise", [
+                ["insertEntreprise", 2],
+                ["updateEntreprise", 2],
+                ["requestOneEntreprise", 2],
+                ["getVehiclesEntreprise", 2],
+                ["initAllEntreprises", 2, "init_server"],
+                ["getEntrepriseLogs", 2],
+                ["storeVehicleEntreprise", 2],
+                ["changeVehiclesEntrepriseOwner", 2],
+                ["insertEntrepriseLogs", 2]
+            ], 2.0],
+            ["\Company_System\client", "max_entreprise", [
+                ["createEntreprise", -2],
+                ["initEntreprises", -2, "init_client_spawn"],
+                ["createEntrepriseMenu", -2],
+                ["editEntrepriseMenu", -2],
+                ["stockageBuy", -2],
+                ["stockageSell", -2],
+                ["openStockage", -2],
+                ["stockageRetrieve", -2],
+                ["stockageInventory", -2],
+                ["entrepriseLeave", -2],
+                ["entrepriseDisband", -2],
+                ["memberEntrepriseMenu", -2],
+                ["sendInvitePlayerEntreprise", -2],
+                ["openMenu", -2],
+                ["invitePlayerEntreprise", -2],
+                ["addAllowedItem", -2],
+                ["removeAllowedItem", -2],
+                ["entrepriseKick", -2],
+                ["entrepriseBeKicked", -2],
+                ["takeMoneyFromEntACC", -2],
+                ["putMoneyToEntACC", -2],
+                ["displayAllAvailablesPositions", -2],
+                ["buyNewPosition", -2],
+                ["objectsPlaceMenu", -2],
+                ["lbChangedPlaceMenu", -2],
+                ["removeObject", -2],
+                ["placeObject", -2],
+                ["placeObjectCompleted", -2],
+                ["entrepriseStatus", -2],
+                ["entrepriseAddAction", -2],
+                ["storeVehicleEnt", -2],
+                ["impoundMenuEntreprise", -2],
+                ["garageLBChangeEntreprise", -2],
+                ["unimpoundEntreprise", -2],
+                ["entrepriseSetAssociates", -2],
+                ["entrepriseRemoveAssociates", -2],
+                ["openStockage2", -2],
+                ["stockageInventory2", -2],
+                ["stockageRetrieve2", -2],
+                ["stockageSell2", -2],
+                ["lbChangedCreateMenu", -2],
+                ["changeTypeEntreprise", -2],
+                ["updateRank", -2],
+                ["historicResultMenu", -2],
+                ["historicMenu", -2]
+            ], 2.1],
+            ["\Company_System\server", "max_entreprise", [
+                ["insertEntreprise", 2],
+                ["updateEntreprise", 2],
+                ["requestOneEntreprise", 2],
+                ["getVehiclesEntreprise", 2],
+                ["initAllEntreprises", 2, "init_server"],
+                ["getEntrepriseLogs", 2],
+                ["storeVehicleEntreprise", 2],
+                ["changeVehiclesEntrepriseOwner", 2],
+                ["insertEntrepriseLogs", 2]
+            ], 2.1],
+            ["\Company_System\client", "max_entreprise", [
+                ["createEntreprise", -2],
+                ["initEntreprises", -2, "init_client_spawn"],
+                ["createEntrepriseMenu", -2],
+                ["editEntrepriseMenu", -2],
+                ["stockageBuy", -2],
+                ["stockageSell", -2],
+                ["openStockage", -2],
+                ["stockageRetrieve", -2],
+                ["stockageInventory", -2],
+                ["entrepriseLeave", -2],
+                ["entrepriseDisband", -2],
+                ["memberEntrepriseMenu", -2],
+                ["sendInvitePlayerEntreprise", -2],
+                ["openMenu", -2],
+                ["invitePlayerEntreprise", -2],
+                ["addAllowedItem", -2],
+                ["removeAllowedItem", -2],
+                ["entrepriseKick", -2],
+                ["entrepriseBeKicked", -2],
+                ["takeMoneyFromEntACC", -2],
+                ["putMoneyToEntACC", -2],
+                ["displayAllAvailablesPositions", -2],
+                ["buyNewPosition", -2],
+                ["objectsPlaceMenu", -2],
+                ["lbChangedPlaceMenu", -2],
+                ["removeObject", -2],
+                ["placeObject", -2],
+                ["placeObjectCompleted", -2],
+                ["entrepriseStatus", -2],
+                ["entrepriseAddAction", -2],
+                ["storeVehicleEnt", -2],
+                ["impoundMenuEntreprise", -2],
+                ["garageLBChangeEntreprise", -2],
+                ["unimpoundEntreprise", -2],
+                ["entrepriseSetAssociates", -2],
+                ["entrepriseRemoveAssociates", -2],
+                ["openStockage2", -2],
+                ["stockageInventory2", -2],
+                ["stockageRetrieve2", -2],
+                ["stockageSell2", -2],
+                ["lbChangedCreateMenu", -2],
+                ["changeTypeEntreprise", -2],
+                ["updateRank", -2],
+                ["historicResultMenu", -2],
+                ["historicMenu", -2]
+            ], 2.2],
+            ["\Company_System\server", "max_entreprise", [
+                ["insertEntreprise", 2],
+                ["updateEntreprise", 2],
+                ["requestOneEntreprise", 2],
+                ["getVehiclesEntreprise", 2],
+                ["initAllEntreprises", 2, "init_server"],
+                ["getEntrepriseLogs", 2],
+                ["storeVehicleEntreprise", 2],
+                ["changeVehiclesEntrepriseOwner", 2],
+                ["insertEntrepriseLogs", 2]
+            ], 2.2],
+            ["\Company_System\client", "max_entreprise", [
+                ["createEntreprise", -2],
+                ["initEntreprises", -2, "init_client_spawn"],
+                ["createEntrepriseMenu", -2],
+                ["editEntrepriseMenu", -2],
+                ["stockageBuy", -2],
+                ["stockageSell", -2],
+                ["openStockage", -2],
+                ["stockageRetrieve", -2],
+                ["stockageInventory", -2],
+                ["entrepriseLeave", -2],
+                ["entrepriseDisband", -2],
+                ["memberEntrepriseMenu", -2],
+                ["sendInvitePlayerEntreprise", -2],
+                ["openMenu", -2],
+                ["invitePlayerEntreprise", -2],
+                ["addAllowedItem", -2],
+                ["removeAllowedItem", -2],
+                ["entrepriseKick", -2],
+                ["entrepriseBeKicked", -2],
+                ["takeMoneyFromEntACC", -2],
+                ["putMoneyToEntACC", -2],
+                ["displayAllAvailablesPositions", -2],
+                ["buyNewPosition", -2],
+                ["objectsPlaceMenu", -2],
+                ["lbChangedPlaceMenu", -2],
+                ["removeObject", -2],
+                ["placeObject", -2],
+                ["placeObjectCompleted", -2],
+                ["entrepriseStatus", -2],
+                ["entrepriseAddAction", -2],
+                ["storeVehicleEnt", -2],
+                ["impoundMenuEntreprise", -2],
+                ["garageLBChangeEntreprise", -2],
+                ["unimpoundEntreprise", -2],
+                ["entrepriseSetAssociates", -2],
+                ["entrepriseRemoveAssociates", -2],
+                ["openStockage2", -2],
+                ["stockageInventory2", -2],
+                ["stockageRetrieve2", -2],
+                ["stockageSell2", -2],
+                ["lbChangedCreateMenu", -2],
+                ["changeTypeEntreprise", -2],
+                ["updateRank", -2],
+                ["historicResultMenu", -2],
+                ["historicMenu", -2]
+            ], 3.0],
+            ["\Company_System\server", "max_entreprise", [
+                ["insertEntreprise", 2],
+                ["updateEntreprise", 2],
+                ["requestOneEntreprise", 2],
+                ["getVehiclesEntreprise", 2],
+                ["initAllEntreprises", 2, "init_server"],
+                ["getEntrepriseLogs", 2],
+                ["storeVehicleEntreprise", 2],
+                ["changeVehiclesEntrepriseOwner", 2],
+                ["insertEntrepriseLogs", 2]
+            ], 3.0]
+        ]],
+        ["Max_Settings_Dispatch", [
+            ["\Dispatch\client", "max_callsmanage", [
+                ["openCallsManagementMenu", -2],
+                ["lbChangedCallsMenu", -2],
+                ["acceptCall", -2],
+                ["deleteCall", -2],
+                ["showCall", -2],
+                ["sendMessageManagement", -2],
+                ["lbChangedMessage", -2],
+                ["addWaypoint", -2],
+                ["removeWaypoint", -2],
+                ["endCall", -2],
+                ["replyCall", -2],
+                ["callCops", -2],
+                ["callMedics", -2],
+                ["deathMessage", -2]
+            ], 2.0],
+            ["\Dispatch\client", "max_callsmanage", [
+                ["openCallsManagementMenu", -2],
+                ["lbChangedCallsMenu", -2],
+                ["acceptCall", -2],
+                ["deleteCall", -2],
+                ["showCall", -2],
+                ["sendMessageManagement", -2],
+                ["lbChangedMessage", -2],
+                ["addWaypoint", -2],
+                ["removeWaypoint", -2],
+                ["endCall", -2],
+                ["replyCall", -2],
+                ["callCops", -2],
+                ["callMedics", -2],
+                ["callEast", -2],
+                ["deathMessage", -2]
+            ], 2.1],
+            ["\Dispatch\server", "max_callsmanage", [
+                ["serverInitDispatch", 2, "init_server"]
+            ], 2.1],
+            ["\Dispatch\client", "max_callsmanage", [
+                ["openCallsManagementMenu", -2],
+                ["lbChangedCallsMenu", -2],
+                ["acceptCall", -2],
+                ["deleteCall", -2],
+                ["showCall", -2],
+                ["sendMessageManagement", -2],
+                ["lbChangedMessage", -2],
+                ["addWaypoint", -2],
+                ["removeWaypoint", -2],
+                ["endCall", -2],
+                ["replyCall", -2],
+                ["callCops", -2],
+                ["callMedics", -2],
+                ["callEast", -2],
+                ["deathMessage", -2],
+                ["callAgain", -2]
+            ], 2.2],
+            ["\Dispatch\server", "max_callsmanage", [
+                ["serverInitDispatch", 2, "init_server"]
+            ], 2.2],
+            ["\Dispatch\client", "max_callsmanage", [
+                ["openCallsManagementMenu", -2],
+                ["lbChangedCallsMenu", -2],
+                ["acceptCall", -2],
+                ["deleteCall", -2],
+                ["showCall", -2],
+                ["sendMessageManagement", -2],
+                ["lbChangedMessage", -2],
+                ["addWaypoint", -2],
+                ["removeWaypoint", -2],
+                ["endCall", -2],
+                ["replyCall", -2],
+                ["callCops", -2],
+                ["callMedics", -2],
+                ["callEast", -2],
+                ["deathMessage", -2],
+                ["callAgain", -2]
+            ], 3.0],
+            ["\Dispatch\server", "max_callsmanage", [
+                ["serverInitDispatch", 2, "init_server"]
+            ], 3.0]
+        ]],
+        ["Max_Settings_Gouvernement", [
+            ["\Governement_System\client", "max_gouvernement", [
+                ["electionMenu", -2],
+                ["startVote", -2],
+                ["stopVote", -2],
+                ["vote", -2],
+                ["requestAdd", -2],
+                ["gouvernementNotification", -2],
+                ["gouvernementTaxe", -2],
+                ["securityMenu", -2],
+                ["emergencyGouv", -2],
+                ["emergencyCop", -2],
+                ["emergencyMed", -2],
+                ["emergencyDep", -2],
+                ["prepareVoteMenu", -2],
+                ["prepareVote", -2],
+                ["governorMenu", -2],
+                ["onSliderChangeTaxes", -2],
+                ["initGouvernement", -2, "init_client_spawn"],
+                ["onKeyUpTaxes", -2],
+                ["transfertGouvernement", -2],
+                ["historicMenu", -2],
+                ["historicResultMenu", -2],
+                ["disbandGouvernement", -2],
+                ["leaveGouvernement", -2],
+                ["sendInviteGouvernement", -2],
+                ["receiveInviteGouvernement", -2],
+                ["gouvernementKick", -2],
+                ["ministreMenu", -2],
+                ["viewLaws", -2],
+                ["lbChangedLaws", -2],
+                ["editLawsMenu", -2],
+                ["createLaws", -2],
+                ["deleteLaws", -2],
+                ["lbChangedLawsEdit", -2],
+                ["accountManagementMenu", -2],
+                ["withdrawAccount", -2],
+                ["sendAccount", -2],
+                ["historicAccount", -2],
+                ["selectGovernementMenu", -2],
+                ["declareRevenu", -2],
+                ["declareRevenuMenu", -2],
+                ["onKeyUpRevenu", -2],
+                ["historicResultMenuEntreprise", -2]
+            ], 2.0],
+            ["\Governement_System\server", "max_gouvernement", [
+                ["initGouvernementServer", 2, "init_server"],
+                ["voteUpdate", 2],
+                ["updateStateVote", 2],
+                ["startVoteCheck", 2],
+                ["request", 2],
+                ["updateTaxes", 2],
+                ["updateEndVote", 2],
+                ["updateAccounts", 2],
+                ["getGouvernementLogs", 2],
+                ["updateLaws", 2],
+                ["getRealTime", 2],
+                ["getAccountLogs", 2],
+                ["getentrepriseLogs", 2]
+            ], 2.0],
+            ["\Governement_System\client", "max_gouvernement", [
+                ["electionMenu", -2],
+                ["startVote", -2],
+                ["stopVote", -2],
+                ["vote", -2],
+                ["requestAdd", -2],
+                ["gouvernementNotification", -2],
+                ["gouvernementTaxe", -2],
+                ["securityMenu", -2],
+                ["emergencyGouv", -2],
+                ["emergencyCop", -2],
+                ["emergencyMed", -2],
+                ["emergencyDep", -2],
+                ["prepareVoteMenu", -2],
+                ["prepareVote", -2],
+                ["governorMenu", -2],
+                ["onSliderChangeTaxes", -2],
+                ["initGouvernement", -2, "init_client_spawn"],
+                ["onKeyUpTaxes", -2],
+                ["transfertGouvernement", -2],
+                ["historicMenu", -2],
+                ["historicResultMenu", -2],
+                ["disbandGouvernement", -2],
+                ["leaveGouvernement", -2],
+                ["sendInviteGouvernement", -2],
+                ["receiveInviteGouvernement", -2],
+                ["gouvernementKick", -2],
+                ["ministreMenu", -2],
+                ["viewLaws", -2],
+                ["lbChangedLaws", -2],
+                ["editLawsMenu", -2],
+                ["createLaws", -2],
+                ["deleteLaws", -2],
+                ["lbChangedLawsEdit", -2],
+                ["accountManagementMenu", -2],
+                ["withdrawAccount", -2],
+                ["sendAccount", -2],
+                ["historicAccount", -2],
+                ["selectGovernementMenu", -2],
+                ["declareRevenu", -2],
+                ["declareRevenuMenu", -2],
+                ["onKeyUpRevenu", -2],
+                ["historicResultMenuEntreprise", -2]
+            ], 2.1],
+            ["\Governement_System\server", "max_gouvernement", [
+                ["initGouvernementServer", 2, "init_server"],
+                ["voteUpdate", 2],
+                ["updateStateVote", 2],
+                ["startVoteCheck", 2],
+                ["request", 2],
+                ["updateTaxes", 2],
+                ["updateEndVote", 2],
+                ["updateAccounts", 2],
+                ["getGouvernementLogs", 2],
+                ["updateLaws", 2],
+                ["getRealTime", 2],
+                ["getAccountLogs", 2],
+                ["getentrepriseLogs", 2]
+            ], 2.1],
+            ["\Governement_System\client", "max_gouvernement", [
+                ["electionMenu", -2],
+                ["startVote", -2],
+                ["stopVote", -2],
+                ["vote", -2],
+                ["requestAdd", -2],
+                ["gouvernementNotification", -2],
+                ["gouvernementTaxe", -2],
+                ["securityMenu", -2],
+                ["emergencyGouv", -2],
+                ["emergencyCop", -2],
+                ["emergencyMed", -2],
+                ["emergencyDep", -2],
+                ["prepareVoteMenu", -2],
+                ["prepareVote", -2],
+                ["governorMenu", -2],
+                ["onSliderChangeTaxes", -2],
+                ["initGouvernement", -2, "init_client_spawn"],
+                ["onKeyUpTaxes", -2],
+                ["transfertGouvernement", -2],
+                ["historicMenu", -2],
+                ["historicResultMenu", -2],
+                ["disbandGouvernement", -2],
+                ["leaveGouvernement", -2],
+                ["sendInviteGouvernement", -2],
+                ["receiveInviteGouvernement", -2],
+                ["gouvernementKick", -2],
+                ["ministreMenu", -2],
+                ["viewLaws", -2],
+                ["lbChangedLaws", -2],
+                ["editLawsMenu", -2],
+                ["createLaws", -2],
+                ["deleteLaws", -2],
+                ["lbChangedLawsEdit", -2],
+                ["accountManagementMenu", -2],
+                ["withdrawAccount", -2],
+                ["sendAccount", -2],
+                ["historicAccount", -2],
+                ["selectGovernementMenu", -2],
+                ["declareRevenu", -2],
+                ["declareRevenuMenu", -2],
+                ["onKeyUpRevenu", -2],
+                ["historicResultMenuEntreprise", -2]
+            ], 3.0],
+            ["\Governement_System\server", "max_gouvernement", [
+                ["initGouvernementServer", 2, "init_server"],
+                ["voteUpdate", 2],
+                ["updateStateVote", 2],
+                ["startVoteCheck", 2],
+                ["request", 2],
+                ["updateTaxes", 2],
+                ["updateEndVote", 2],
+                ["updateAccounts", 2],
+                ["getGouvernementLogs", 2],
+                ["updateLaws", 2],
+                ["getRealTime", 2],
+                ["getAccountLogs", 2],
+                ["getentrepriseLogs", 2]
+            ], 3.0]
+        ]],
+        ["The_Programmer_Settings_Identity", [
+            ["\Advanced_Identity\client", "the_programmer_identity", [
+                ["createCard", -2],
+                ["Load_Card", -2],
+                ["setupCard", -2],
+                ["showCard", -2],
+                ["displayCard", -2],
+                ["showPermis", -2],
+                ["displayPermis", -2]
+            ], 2.0],
+            ["\Advanced_Identity\server", "the_programmer_identity", [
+                ["request", 2, "init_client_remoteExec", ["player"]],
+                ["updateCard", 2],
+                ["deleteCard", 2]
+            ], 2.0],
+            ["\Advanced_Identity\client", "the_programmer_identity", [
+                ["createCard", -2],
+                ["Load_Card", -2],
+                ["setupCard", -2],
+                ["showCard", -2],
+                ["displayCard", -2],
+                ["showPermis", -2],
+                ["displayPermis", -2]
+            ], 2.1],
+            ["\Advanced_Identity\server", "the_programmer_identity", [
+                ["request", 2, "init_client_remoteExec", ["player"]],
+                ["updateCard", 2],
+                ["deleteCard", 2]
+            ], 2.1],
+            ["\Advanced_Identity\client", "the_programmer_identity", [
+                ["IdentityCreateCard", -2],
+                ["IdentityDisplayCard", -2],
+                ["IdentityDisplayPermis", -2],
+                ["IdentityInitPlayer", -2],
+                ["IdentityMenuCard", -2],
+                ["IdentityShowCard", -2],
+                ["IdentityShowPermis", -2],
+                ["IdentityTakePapers", -2],
+                ["IdentityVerifAction", -2]
+            ], 3.0],
+            ["\Advanced_Identity\server", "the_programmer_identity", [
+                ["IdentityRequestCard", 2, "init_client_remoteExec", ["player"]],
+                ["IdentityUpdateCard", 2]
+            ], 3.0],
+            ["\Advanced_Identity\client", "the_programmer_identity", [
+                ["IdentityCreateCard", -2],
+                ["IdentityDisplayCard", -2],
+                ["IdentityDisplayPermis", -2],
+                ["IdentityInitPlayer", -2],
+                ["IdentityMenuCard", -2],
+                ["IdentityShowCard", -2],
+                ["IdentityShowPermis", -2],
+                ["IdentityTakePapers", -2],
+                ["IdentityVerifAction", -2]
+            ], 3.1],
+            ["\Advanced_Identity\server", "the_programmer_identity", [
+                ["IdentityRequestCard", 2, "init_client_remoteExec", ["player"]],
+                ["IdentityUpdateCard", 2]
+            ], 3.1]
+        ]],
+        ["The_programmer_Duty_Config", [
+            ["\duty_system\client", "The_programmer_Duty", [
+                ["Prise_Service_Police", -2],
+                ["Prise_Service_Pompier", -2],
+                ["SetupLevel", -2],
+                ["init_Service", -2],
+                ["Arreter_Service", -2],
+                ["MedGear", -2],
+                ["MenuPrise", -2],
+                ["CopGear", -2],
+                ["SetvehicleVarName", -2]
+            ], 1.0],
+            ["\duty_system\server", "The_programmer_Duty", [
+                ["Query_Request", 2],
+                ["UpdateQuery", 2, "init_server"]
+            ], 1.0],
+            ["\duty_system\client", "The_programmer_Duty", [
+                ["Prise_Service_Police", -2],
+                ["Prise_Service_Pompier", -2],
+                ["SetupLevel", -2],
+                ["init_Service", -2],
+                ["Arreter_Service", -2],
+                ["MedGear", -2],
+                ["MenuPrise", -2],
+                ["CopGear", -2],
+                ["SetvehicleVarName", -2]
+            ], 1.1],
+            ["\duty_system\server", "The_programmer_Duty", [
+                ["Query_Request", 2],
+                ["UpdateQuery", 2, "init_server"]
+            ], 1.1],
+            ["\duty_system\client", "The_programmer_Duty", [
+                ["Prise_Service_Police", -2],
+                ["Prise_Service_Pompier", -2],
+                ["SetupLevel", -2],
+                ["init_Service", -2],
+                ["Arreter_Service", -2],
+                ["MedGear", -2],
+                ["MenuPrise", -2],
+                ["CopGear", -2],
+                ["SetvehicleVarName", -2]
+            ], 1.2],
+            ["\duty_system\server", "The_programmer_Duty", [
+                ["Query_Request", 2],
+                ["UpdateQuery", 2, "init_server"]
+            ], 1.2],
+            ["\duty_system\client", "The_programmer_Duty", [
+                ["Prise_Service_Police", -2],
+                ["Prise_Service_Pompier", -2],
+                ["SetupLevel", -2],
+                ["init_Service", -2],
+                ["Arreter_Service", -2],
+                ["MedGear", -2],
+                ["MenuPrise", -2],
+                ["CopGear", -2],
+                ["SetvehicleVarName", -2]
+            ], 1.3],
+            ["\duty_system\server", "The_programmer_Duty", [
+                ["Query_Request", 2],
+                ["UpdateQuery", 2, "init_server"]
+            ], 1.3],
+            ["\duty_system\client", "The_programmer_Duty", [
+                ["Prise_Service_Police", -2],
+                ["Prise_Service_Pompier", -2],
+                ["SetupLevel", -2],
+                ["init_Service", -2],
+                ["Arreter_Service", -2],
+                ["MedGear", -2],
+                ["MenuPrise", -2],
+                ["CopGear", -2],
+                ["SetvehicleVarName", -2],
+                ["AdacGear", -2],
+                ["Beeper_Menu", -2],
+                ["Beeper_Message", -2],
+                ["Prise_Service_Adac", -2],
+                ["UpdateLicence", -2, "init_client_spawn"]
+            ], 2.0],
+            ["\duty_system\server", "The_programmer_Duty", [
+                ["Query_Request", 2],
+                ["UpdateQuery", 2, "init_server"]
+            ], 2.0],
+            ["\duty_system\client", "The_programmer_Duty", [
+                ["Prise_Service_Police", -2],
+                ["Prise_Service_Pompier", -2],
+                ["SetupLevel", -2],
+                ["init_Service", -2],
+                ["Arreter_Service", -2],
+                ["MedGear", -2],
+                ["MenuPrise", -2],
+                ["CopGear", -2],
+                ["SetvehicleVarName", -2],
+                ["AdacGear", -2],
+                ["Beeper_Menu", -2],
+                ["Beeper_Message", -2],
+                ["Prise_Service_Adac", -2],
+                ["broadcastDuty", -2],
+                ["UpdateLicence", -2, "init_client_spawn"]
+            ], 2.1],
+            ["\duty_system\server", "The_programmer_Duty", [
+                ["Query_Request", 2],
+                ["UpdateQuery", 2, "init_server"]
+            ], 2.1],
+            ["\duty_system\client", "The_programmer_Duty", [
+                ["Prise_Service_Police", -2],
+                ["Prise_Service_Pompier", -2],
+                ["SetupLevel", -2],
+                ["init_Service", -2],
+                ["Arreter_Service", -2],
+                ["MedGear", -2],
+                ["MenuPrise", -2],
+                ["CopGear", -2],
+                ["SetvehicleVarName", -2],
+                ["AdacGear", -2],
+                ["Beeper_Menu", -2],
+                ["Beeper_Message", -2],
+                ["Prise_Service_Adac", -2],
+                ["broadcastDuty", -2],
+                ["UpdateLicence", -2, "init_client_spawn"]
+            ], 3.0],
+            ["\duty_system\server", "The_programmer_Duty", [
+                ["Query_Request", 2],
+                ["UpdateQuery", 2, "init_server"]
+            ], 3.0]
+        ]],
+        ["Max_Settings_WhitelistMenu", [
+            ["\Whitelist_Menu\client", "max_whitelist", [
+                ["whitelistAdd", -2],
+                ["whitelist", -2],
+                ["whitelistCategory", -2],
+                ["whitelistMenu", -2],
+                ["whitelistRemove", -2],
+                ["copLevelChange", -2],
+                ["medLevelChange", -2]
+            ], 2.0],
+            ["\Whitelist_Menu\server", "max_whitelist", [
+                ["updateCopLevel", 2],
+                ["updateMedLevel", 2]
+            ], 2.0],
+            ["\Whitelist_Menu\client", "max_whitelist", [
+                ["whitelistAdd", -2],
+                ["whitelist", -2],
+                ["whitelistCategory", -2],
+                ["whitelistMenu", -2],
+                ["whitelistRemove", -2],
+                ["levelChange", -2]
+            ], 3.0],
+            ["\Whitelist_Menu\server", "max_whitelist", [
+                ["updateLevel", 2]
+            ], 3.0]
+        ]],
+        ["The_Programmer_Repair_Config", [
+            ["\Repair_Man\client", "The_Programmer_RepairSystem", [
+                ["repairSystem", -2],
+                ["repairMenu", -2],
+                ["RepairInit", -2, "init_client_spawn"]
+            ], 2.0]
+        ]],
+        ["Stock_System_Config", [
+            ["\Stock_System\client", "stock_system", [
+                ["canBuyRareItem", -2],
+                ["getRarityItem", -2],
+                ["getDisplayedText", -2],
+                ["actionCanBuyRareItem", -2],
+                ["getRarityItemPrice", -2]
+            ], 1.0],
+            ["\Stock_System\server", "stock_system", [
+                ["getCopiesLeft", 2],
+                ["initRarityItems", 2, "init_server"],
+                ["updateCopiesLeft", 2]
+            ], 1.0]
+        ]],
+        ["Max_Settings_Craft", [
+            ["\crafting_system\client", "max_craft", [
+                ["placeEtabli", -2],
+                ["craftLbChanged", -2],
+                ["openWorkBench", -2],
+                ["placeEtabliAction", -2],
+                ["placeEtabliCompleted", -2],
+                ["retreiveCraft", -2],
+                ["initCraft", -2, "init_client_spawn"],
+                ["workBenchProgressBar", -2],
+                ["workBenchStoreItem", -2],
+                ["workBenchInventory", -2],
+                ["workBenchTakeItem", -2],
+                ["index", -2],
+                ["craftAction", -2],
+                ["craftCancel", -2],
+                ["workBenchAddaction", -2],
+                ["removeWorkBench", -2]
+            ], 1.0],
+            ["\crafting_system\server", "max_craft", [
+                ["craftVehicle", 2]
+            ], 1.0],
+            ["\crafting_system\client", "max_craft", [
+                ["placeEtabli", -2],
+                ["craftLbChanged", -2],
+                ["openWorkBench", -2],
+                ["placeEtabliAction", -2],
+                ["placeEtabliCompleted", -2],
+                ["retreiveCraft", -2],
+                ["initCraft", -2, "init_client_spawn"],
+                ["workBenchProgressBar", -2],
+                ["workBenchStoreItem", -2],
+                ["workBenchInventory", -2],
+                ["workBenchTakeItem", -2],
+                ["index", -2],
+                ["craftAction", -2],
+                ["craftCancel", -2],
+                ["workBenchAddaction", -2],
+                ["removeWorkBench", -2]
+            ], 2.0],
+            ["\crafting_system\server", "max_craft", [
+                ["craftVehicle", 2],
+                ["initWorkbench", 2, "init_server"],
+                ["createWorkbench", 2],
+                ["deleteWorkbench", 2]
+            ], 2.0]
+        ]],
+        ["The_Programmer_BankingSystem", [
+            ["\Banking_System\client", "the_programmer_bank_system", [
+                ["bankInitPlayer", -2],
+                ["paymentType", -2]
+            ], 1.0],
+            ["\Banking_System\client\bank", "the_programmer_bank_system", [
+                ["bankCard", -2],
+                ["bankCreateLivret", -2],
+                ["bankDeposit", -2],
+                ["bankInterest", -2, "init_client_spawn"],
+                ["bankLogin", -2],
+                ["bankMenu", -2],
+                ["bankPin", -2],
+                ["bankUpdateLivret", -2],
+                ["bankWithdrawLivret", -2]
+            ], 1.0],
+            ["\Banking_System\client\atm", "the_programmer_bank_system", [
+                ["atm_keyboard", -2],
+                ["atm_main", -2],
+                ["atm_pin", -2],
+                ["atm_situation", -2]
+            ], 1.0],
+            ["\Banking_System\client\atm\gang", "the_programmer_bank_system", [
+                ["atm_gangMenu", -2],
+                ["atm_gangMoney", -2],
+                ["atm_gangResponse", -2]
+            ], 1.0],
+            ["\Banking_System\client\atm\money", "the_programmer_bank_system", [
+                ["atm_deposit", -2],
+                ["atm_money", -2],
+                ["atm_receipt", -2],
+                ["atm_withdraw", -2]
+            ], 1.0],
+            ["\Banking_System\client\atm\transfert", "the_programmer_bank_system", [
+                ["atm_transfert", -2],
+                ["atm_transfertValid", -2],
+                ["atm_transfertMenu", -2],
+                ["atm_transfertReceive", -2],
+            ], 1.0],
+            ["\Banking_System\server", "the_programmer_bank_system", [
+                ["bankInsert", 2, "init_client_remoteExec", ["pid"]],
+                ["bankInterestServer", 2, "init_server"],
+                ["bankSaveCard", 2],
+                ["bankSaveLivret", 2],
+                ["bankUpdate", 2]
+            ], 1.0],
+            ["\Banking_System\server\atm", "the_programmer_bank_system", [
+                ["atmGangUpdate", 2],
+                ["validNumberCount", 2]
+            ], 1.0]
+        ]],
+        ["The_Programmer_MarkersOnOff_Config", [
+            ["\Markers_Filter\client", "theprogrammer_markers_filter", [
+                ["markersManage", -2, "init_client_spawn"],
+                ["markersReset", -2],
+                ["markersDisplay", -2],
+                ["markersAllOnOff", -2],
+                ["markersCtrl", -2]
+            ], 1.0],
+            ["\Markers_Filter\client", "theprogrammer_markers_filter", [
+                ["markersManage", -2, "init_client_spawn"],
+                ["markersReset", -2],
+                ["markersDisplay", -2],
+                ["markersAllOnOff", -2],
+                ["markersCtrl", -2]
+            ], 1.1],
+            ["\Markers_Filter\client", "theprogrammer_markers_filter", [
+                ["markersManage", -2],
+                ["markersReset", -2],
+                ["markersDisplay", -2],
+                ["markersAllOnOff", -2],
+                ["markersCtrl", -2],
+                ["markersUpdate", -2, "init_client_spawn"]
+            ], 2.0],
+            ["\Markers_Filter\client", "theprogrammer_markers_filter", [
+                ["markersManage", -2],
+                ["markersReset", -2],
+                ["markersDisplay", -2],
+                ["markersAllOnOff", -2],
+                ["markersCtrl", -2],
+                ["markersUpdate", -2, "init_client_spawn"]
+            ], 2.1]
+        ]],
+        ["Vin_Settings_CameraSpawn", [
+            ["\Spawn_Camera\client", "theprogrammer_camera", [
+                ["stopScript", -2],
+                ["moveText", -2],
+                ["moveCamera", -2],
+                ["init", -2, "init_client_spawn"]
+            ], 2.0],
+            ["\Spawn_Camera\client", "theprogrammer_camera", [
+                ["stopScript", -2],
+                ["moveText", -2],
+                ["moveCamera", -2],
+                ["typeText", -2],
+                ["infoText", -2],
+                ["init", -2, "init_client_spawn"]
+            ], 2.1]
+        ]],
+        ["Max_Settings_Annuaire", [
+            ["\Directory\client", "max_annuaire", [
+                ["pagesJaunes", -2],
+                ["pagesBlanches", -2],
+                ["blackannuaire", -2],
+                ["requestAdd", -2],
+                ["sendCall", -2]
+            ], 2.0],
+            ["\Directory\server", "max_annuaire", [
+                ["getPagesBlanches", 2],
+                ["updateAnnuaire", 2],
+                ["request", 2]
+            ], 2.0],
+            ["\Directory\client", "max_annuaire", [
+                ["pagesJaunes", -2],
+                ["pagesBlanches", -2],
+                ["blackannuaire", -2],
+                ["requestAdd", -2],
+                ["sendCall", -2]
+            ], 3.0],
+            ["\Directory\server", "max_annuaire", [
+                ["getPagesBlanches", 2],
+                ["updateAnnuaire", 2],
+                ["request", 2, "init_client_remoteExec", ["player"]]
+            ], 3.0]
+        ]],
+        ["Max_Settings_Plants", [
+            ["\Growing_System\client", "max_plants", [
+                ["plantPlante", -2],
+                ["pickupPlante", -2],
+                ["waterPlante", -2],
+                ["plantInfo", -2],
+                ["deletePlante", -2]
+            ], 2.0],
+            ["\Growing_System\server", "max_plants", [
+                ["createPlante", 2],
+                ["loadAllPlantes", 2, "init_server"],
+                ["deletePlanteServer", 2],
+                ["plantesLoop", 2],
+                ["getRealTime", 2],
+                ["diffDate", 2],
+                ["updateWaterPlante", 2]
+            ], 2.0],
+            ["\Growing_System\client", "max_plants", [
+                ["plantPlante", -2],
+                ["pickupPlante", -2],
+                ["waterPlante", -2],
+                ["plantInfo", -2],
+                ["deletePlante", -2],
+                ["diffDateClient", -2]
+            ], 3.0],
+            ["\Growing_System\server", "max_plants", [
+                ["createPlante", 2],
+                ["loadAllPlantes", 2, "init_server"],
+                ["deletePlanteServer", 2],
+                ["plantesLoop", 2],
+                ["getRealTime", 2],
+                ["diffDate", 2],
+                ["updateWaterPlante", 2]
+            ], 3.0],
+            ["\Growing_System\client", "max_plants", [
+                ["plantPlante", -2],
+                ["pickupPlante", -2],
+                ["waterPlante", -2],
+                ["plantInfo", -2],
+                ["deletePlante", -2],
+                ["diffDateClient", -2]
+            ], 3.1],
+            ["\Growing_System\server", "max_plants", [
+                ["createPlante", 2],
+                ["loadAllPlantes", 2, "init_server"],
+                ["deletePlanteServer", 2],
+                ["plantesLoop", 2],
+                ["getRealTime", 2],
+                ["diffDate", 2],
+                ["updateWaterPlante", 2]
+            ], 3.1],
+            ["\Growing_System\client", "max_plants", [
+                ["plantPlante", -2],
+                ["pickupPlante", -2],
+                ["waterPlante", -2],
+                ["plantInfo", -2],
+                ["deletePlante", -2],
+                ["diffDateClient", -2]
+            ], 3.2],
+            ["\Growing_System\server", "max_plants", [
+                ["createPlante", 2],
+                ["loadAllPlantes", 2, "init_server"],
+                ["deletePlanteServer", 2],
+                ["plantesLoop", 2],
+                ["getRealTime", 2],
+                ["diffDate", 2],
+                ["updateWaterPlante", 2]
+            ], 3.2]
+        ]],
+        ["The_programmer_Mining", [
+            ["\Farming_System\client", "theprogrammer_Mining", [
+                ["mineOres", -2],
+                ["cutTree", -2],
+                ["processingSystem", -2],
+                ["initMining", -2, "init_client_spawn"]
+            ], 2.0],
+            ["\Farming_System\server", "theprogrammer_Mining", [
+                ["oresSpawn", 2],
+                ["initloop", 2, "init_server"]
+            ], 2.0],
+            ["\Farming_System\client", "theprogrammer_Mining", [
+                ["mineOres", -2],
+                ["cutTree", -2],
+                ["processingSystem", -2],
+                ["initMining", -2, "init_client_spawn"]
+            ], 2.1],
+            ["\Farming_System\server", "theprogrammer_Mining", [
+                ["oresSpawn", 2],
+                ["initloop", 2, "init_server"]
+            ], 2.1],
+            ["\Farming_System\client", "theprogrammer_Mining", [
+                ["mineOres", -2],
+                ["cutTree", -2],
+                ["processingSystem", -2],
+                ["initMining", -2, "init_client_spawn"]
+            ], 3.0],
+            ["\Farming_System\server", "theprogrammer_Mining", [
+                ["oresSpawn", 2],
+                ["initloop", 2, "init_server"]
+            ], 3.0],
+            ["\Farming_System\client", "theprogrammer_Mining", [
+                ["mineOres", -2],
+                ["cutTree", -2],
+                ["processingSystem", -2],
+                ["processingPhysical", -2],
+                ["initMining", -2, "init_client_spawn"]
+            ], 3.1],
+            ["\Farming_System\server", "theprogrammer_Mining", [
+                ["oresSpawn", 2],
+                ["initloop", 2, "init_server"]
+            ], 3.1]
+        ]],
+        ["Max_Settings_ControlTech", [
+            ["\Technical_Inspection\client", "max_controltech", [
+                ["verifControlTech", -2],
+                ["controlTech", -2]
+            ], 2.0],
+            ["\Technical_Inspection\server", "max_controltech", [
+                ["updateControlTech", 2]
+            ], 2.0],
+            ["\Technical_Inspection\client", "max_controltech", [
+                ["verifControlTech", -2],
+                ["controlTech", -2],
+                ["inspectionStatus", -2]
+            ], 3.0],
+            ["\Technical_Inspection\server", "max_controltech", [
+                ["updateControlTech", 2],
+                ["initVehicleTechStatus", 2]
+            ], 3.0]
+        ]],
+        ["Max_Settings_Fourriere", [
+            ["\Impound\client", "max_fourriere", [
+                ["unimpoundVehFourriere", -2],
+                ["fourriereMenu", -2],
+                ["garageLBChangevehFourriere", -2]
+            ], 2.0],
+            ["\Impound\server", "max_fourriere", [
+                ["getFourriere", 2]
+            ], 2.0],
+            ["\Impound\client", "max_fourriere", [
+                ["unimpoundVehFourriere", -2],
+                ["fourriereMenu", -2],
+                ["garageLBChangevehFourriere", -2]
+            ], 2.1],
+            ["\Impound\server", "max_fourriere", [
+                ["getFourriere", 2]
+            ], 2.1],
+            ["\Impound\client", "max_fourriere", [
+                ["unimpoundVehFourriere", -2],
+                ["fourriereMenu", -2],
+                ["garageLBChangevehFourriere", -2],
+                ["checkConditionFourriere", -2],
+                ["openFourriere", -2],
+                ["impoundAction", -2]
+            ], 3.0],
+            ["\Impound\server", "max_fourriere", [
+                ["getFourriere", 2],
+                ["updateFourriere", 2],
+                ["updateVehicle", 2]
+            ], 3.0],
+            ["\Impound\client", "max_fourriere", [
+                ["unimpoundVehFourriere", -2],
+                ["fourriereMenu", -2],
+                ["garageLBChangevehFourriere", -2],
+                ["checkConditionFourriere", -2],
+                ["openFourriere", -2],
+                ["impoundAction", -2],
+                ["searchVehicle", -2]
+            ], 3.1],
+            ["\Impound\server", "max_fourriere", [
+                ["getFourriere", 2],
+                ["updateFourriere", 2],
+                ["updateVehicle", 2],
+                ["searchFourriere", 2]
+            ], 3.1]
+        ]],
+        ["Max_Settings_Ebay", [
+            ["\Eway\client", "maxence_eway", [
+                ["openeway", -2],
+                ["ewayBuy", -2],
+                ["ewayPayment", -2],
+                ["ewayLoadCurInventory", -2],
+                ["ewaySellItem", -2],
+                ["ewayCheckItem", -2],
+                ["ewayTakeBack", -2],
+                ["ewayInit", -2, "init_client_spawn"],
+                ["ewayImpoundMenu", -2],
+                ["ewayLoadSellingItems", -2],
+                ["ewaySellVehicle", -2],
+                ["ewayHousesMenu", -2],
+                ["ewaySellHouse", -2],
+                ["ewayEditItem", -2],
+                ["ewayInfoItem", -2],
+                ["ewayLbChangedDaysPrice", -2],
+                ["ewayCategories", -2],
+                ["ewayLbChangedBuyPrice", -2],
+                ["ewayPreview", -2],
+                ["ewayVehicleInit3DPreview", -2],
+                ["ewayVehicleEnd3DPreview", -2],
+                ["ewayHouseInit3DPreview", -2],
+                ["ewayHouseEnd3DPreview", -2],
+                ["ewayWeaponInit3DPreview", -2],
+                ["ewayEditItemButton", -2]
+            ], 2.0],
+            ["\Eway\server", "maxence_eway", [
+                ["ewayServerLoad", 2, "init_server"],
+                ["ewayGetVehicles", 2],
+                ["ewayGetHouses", 2],
+                ["ewayDiffDate", 2],
+                ["ewayIncreaseDate", 2],
+                ["ewayUpdateHouse", 2],
+                ["ewayUpdateVehicle", 2],
+                ["ewayUpdateStatus", 2],
+                ["ewayAddEntry", 2],
+                ["ewayDeleteEntry", 2],
+                ["ewayUpdateQuantity", 2]
+            ], 2.0],
+            ["\Eway\client", "maxence_eway", [
+                ["openeway", -2],
+                ["ewayBuy", -2],
+                ["ewayPayment", -2],
+                ["ewayLoadCurInventory", -2],
+                ["ewaySellItem", -2],
+                ["ewayCheckItem", -2],
+                ["ewayTakeBack", -2],
+                ["ewayInit", -2, "init_client_spawn"],
+                ["ewayImpoundMenu", -2],
+                ["ewayLoadSellingItems", -2],
+                ["ewaySellVehicle", -2],
+                ["ewayHousesMenu", -2],
+                ["ewaySellHouse", -2],
+                ["ewayEditItem", -2],
+                ["ewayInfoItem", -2],
+                ["ewayLbChangedDaysPrice", -2],
+                ["ewayCategories", -2],
+                ["ewayLbChangedBuyPrice", -2],
+                ["ewayPreview", -2],
+                ["ewayVehicleInit3DPreview", -2],
+                ["ewayVehicleEnd3DPreview", -2],
+                ["ewayHouseInit3DPreview", -2],
+                ["ewayHouseEnd3DPreview", -2],
+                ["ewayWeaponInit3DPreview", -2],
+                ["ewayEditItemButton", -2]
+            ], 2.1],
+            ["\Eway\server", "maxence_eway", [
+                ["ewayServerLoad", 2, "init_server"],
+                ["ewayGetVehicles", 2],
+                ["ewayGetHouses", 2],
+                ["ewayDiffDate", 2],
+                ["ewayIncreaseDate", 2],
+                ["ewayUpdateHouse", 2],
+                ["ewayUpdateVehicle", 2],
+                ["ewayUpdateStatus", 2],
+                ["ewayAddEntry", 2],
+                ["ewayDeleteEntry", 2],
+                ["ewayUpdateQuantity", 2]
+            ], 2.1],
+            ["\Eway\client", "maxence_eway", [
+                ["openeway", -2],
+                ["ewayBuy", -2],
+                ["ewayPayment", -2],
+                ["ewayLoadCurInventory", -2],
+                ["ewaySellItem", -2],
+                ["ewayCheckItem", -2],
+                ["ewayTakeBack", -2],
+                ["ewayInit", -2, "init_client_spawn"],
+                ["ewayImpoundMenu", -2],
+                ["ewayLoadSellingItems", -2],
+                ["ewaySellVehicle", -2],
+                ["ewayHousesMenu", -2],
+                ["ewaySellHouse", -2],
+                ["ewayEditItem", -2],
+                ["ewayInfoItem", -2],
+                ["ewayLbChangedDaysPrice", -2],
+                ["ewayCategories", -2],
+                ["ewayLbChangedBuyPrice", -2],
+                ["ewayPreview", -2],
+                ["ewayVehicleInit3DPreview", -2],
+                ["ewayVehicleEnd3DPreview", -2],
+                ["ewayHouseInit3DPreview", -2],
+                ["ewayHouseEnd3DPreview", -2],
+                ["ewayWeaponInit3DPreview", -2],
+                ["ewayEditItemButton", -2]
+            ], 2.2],
+            ["\Eway\server", "maxence_eway", [
+                ["ewayServerLoad", 2, "init_server"],
+                ["ewayGetVehicles", 2],
+                ["ewayGetHouses", 2],
+                ["ewayDiffDate", 2],
+                ["ewayIncreaseDate", 2],
+                ["ewayUpdateHouse", 2],
+                ["ewayUpdateVehicle", 2],
+                ["ewayUpdateStatus", 2],
+                ["ewayAddEntry", 2],
+                ["ewayDeleteEntry", 2],
+                ["ewayUpdateQuantity", 2]
+            ], 2.2],
+            ["\Eway\client", "maxence_eway", [
+                ["openeway", -2],
+                ["ewayBuy", -2],
+                ["ewayPayment", -2],
+                ["ewayLoadCurInventory", -2],
+                ["ewaySellItem", -2],
+                ["ewayCheckItem", -2],
+                ["ewayTakeBack", -2],
+                ["ewayInit", -2, "init_client_spawn"],
+                ["ewayImpoundMenu", -2],
+                ["ewayLoadSellingItems", -2],
+                ["ewaySellVehicle", -2],
+                ["ewayHousesMenu", -2],
+                ["ewaySellHouse", -2],
+                ["ewayEditItem", -2],
+                ["ewayInfoItem", -2],
+                ["ewayLbChangedDaysPrice", -2],
+                ["ewayCategories", -2],
+                ["ewayLbChangedBuyPrice", -2],
+                ["ewayPreview", -2],
+                ["ewayVehicleInit3DPreview", -2],
+                ["ewayVehicleEnd3DPreview", -2],
+                ["ewayHouseInit3DPreview", -2],
+                ["ewayHouseEnd3DPreview", -2],
+                ["ewayWeaponInit3DPreview", -2],
+                ["ewayEditItemButton", -2],
+                ["searchPosEmpty", -2]
+            ], 2.3],
+            ["\Eway\server", "maxence_eway", [
+                ["ewayServerLoad", 2, "init_server"],
+                ["ewayGetVehicles", 2],
+                ["ewayGetHouses", 2],
+                ["ewayDiffDate", 2],
+                ["ewayIncreaseDate", 2],
+                ["ewayUpdateHouse", 2],
+                ["ewayUpdateVehicle", 2],
+                ["ewayUpdateStatus", 2],
+                ["ewayAddEntry", 2],
+                ["ewayDeleteEntry", 2],
+                ["ewayUpdateQuantity", 2]
+            ], 2.3]
+        ]],
+        ["The_Programmer_CarPainter_Config", [
+            ["\Car_Painter\client", "the_programmer_carpainter", [
+                ["carPainter", -2],
+                ["carPainter_cam", -2],
+                ["carPainter_onKeyUp", -2],
+                ["carPainter_onLbSelChanged", -2],
+                ["carPainter_payAndPaint", -2],
+                ["paintCar", -2],
+                ["carPainter_onSliderPosChanged", -2]
+            ], 1.0],
+            ["\Car_Painter\server", "the_programmer_carpainter", [
+                ["carPainter_spawnVehicleColor", 2],
+                ["carPainter_updateCarColor", 2]
+            ], 1.0],
+            ["\Car_Painter\client", "the_programmer_carpainter", [
+                ["carPainter", -2],
+                ["carPainter_cam", -2],
+                ["carPainter_onKeyUp", -2],
+                ["carPainter_onLbSelChanged", -2],
+                ["carPainter_payAndPaint", -2],
+                ["paintCar", -2],
+                ["carPainter_onSliderPosChanged", -2]
+            ], 1.1],
+            ["\Car_Painter\server", "the_programmer_carpainter", [
+                ["carPainter_spawnVehicleColor", 2],
+                ["carPainter_updateCarColor", 2]
+            ], 1.1],
+            ["\Car_Painter\client", "the_programmer_carpainter", [
+                ["carPainter", -2],
+                ["carPainter_cam", -2],
+                ["carPainter_onKeyUp", -2],
+                ["carPainter_colors_onLbSelChanged", -2],
+                ["carPainter_vehicles_onLbSelChanged", -2],
+                ["carPainter_updateDialogInfos", -2],
+                ["carPainter_payAndPaint", -2],
+                ["paintCar", -2],
+                ["carPainter_onSliderPosChanged", -2],
+                ["carPainter_onDialogExit", -2],
+                ["carPainter_rvmats_onLbSelChanged", -2]
+            ], 2.0],
+            ["\Car_Painter\server", "the_programmer_carpainter", [
+                ["carPainter_spawnVehicleColor", 2],
+                ["carPainter_updateCarColor", 2]
+            ], 2.0]
+        ]],
+        ["The_Programmer_Settings_RadialMenu", [
+            ["\radial_menu\client", "CBX", [
+                ["menuEffects", -2],
+                ["newInteraction", -2],
+                ["openInteraction", -2],
+                ["savePos", -2]
+            ], 1.0],
+            ["\radial_menu\client", "CBX", [
+                ["menuEffects", -2],
+                ["newInteraction", -2],
+                ["openInteraction", -2],
+                ["savePos", -2]
+            ], 1.1]
+        ]],
+        ["Max_Settings_Phone_Upgrade", [
+            ["\Advanced_Phone_Upgrade\client", "max_phone", [
+                ["sendMSG", -2],
+                ["cellphone", -2],
+                ["requestAdd", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2]
+            ], 2.0],
+            ["\Phone_Numbers\client", "max_phone", [
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["setupCellPhone", -2],
+                ["deleteMessage", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2]
+            ], 2.0],
+            ["\Advanced_Phone_Upgrade\server", "max_phone", [
+                ["request", 2],
+                ["updateForfait", 2]
+            ], 2.0],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["saveCellPhone", 2],
+                ["getRealTime", 2],
+                ["cellPhoneRequest", 2],
+                ["updatePhone", 2]
+            ], 2.0],
+            ["\Advanced_Phone_Upgrade\client", "max_phone", [
+                ["sendMSG", -2],
+                ["cellphone", -2],
+                ["requestAdd", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2]
+            ], 2.1],
+            ["\Phone_Numbers\client", "max_phone", [
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["setupCellPhone", -2],
+                ["deleteMessage", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2]
+            ], 2.1],
+            ["\Advanced_Phone_Upgrade\server", "max_phone", [
+                ["request", 2],
+                ["updateForfait", 2]
+            ], 2.1],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["saveCellPhone", 2],
+                ["getRealTime", 2],
+                ["cellPhoneRequest", 2],
+                ["updatePhone", 2]
+            ], 2.1],
+            ["\Advanced_Phone_Upgrade\client", "max_phone", [
+                ["sendMSG", -2],
+                ["cellphone", -2],
+                ["requestAdd", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2]
+            ], 2.2],
+            ["\Phone_Numbers\client", "max_phone", [
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["setupCellPhone", -2],
+                ["deleteMessage", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2]
+            ], 2.2],
+            ["\Advanced_Phone_Upgrade\server", "max_phone", [
+                ["request", 2],
+                ["updateForfait", 2]
+            ], 2.2],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["saveCellPhone", 2],
+                ["getRealTime", 2],
+                ["cellPhoneRequest", 2],
+                ["updatePhone", 2]
+            ], 2.2],
+            ["\Advanced_Phone_Upgrade\client", "max_phone", [
+                ["sendMSG", -2],
+                ["cellphone", -2],
+                ["requestAdd", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2],
+                ["addGroupCall", -2],
+                ["missedCall", -2]
+            ], 3.0],
+            ["\Phone_Numbers\client", "max_phone", [
+                ["resetContact", -2],
+                ["findInContacts", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["deleteMessage", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2]
+            ], 3.0],
+            ["\Advanced_Phone_Upgrade\server", "max_phone", [
+                ["request", 2],
+                ["updateForfait", 2]
+            ], 3.0],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["deleteMessageHistory", 2],
+                ["insertMessageHistory", 2],
+                ["updatePhone", 2]
+            ], 3.0],
+            ["\Advanced_Phone_Upgrade\client", "max_phone", [
+                ["sendMSG", -2],
+                ["cellphone", -2],
+                ["requestAdd", -2],
+                ["callLoop", -2],
+                ["sendCall", -2],
+                ["receiveCall", -2],
+                ["callEnd", -2],
+                ["boutique_orange", -2],
+                ["takeCalls", -2],
+                ["initPhone", -2, "init_client_spawn"],
+                ["initCallReceiver", -2],
+                ["addGroupCall", -2],
+                ["missedCall", -2]
+            ], 3.1],
+            ["\Phone_Numbers\client", "max_phone", [
+                ["resetContact", -2],
+                ["findInContacts", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["deleteMessage", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2]
+            ], 3.1],
+            ["\Advanced_Phone_Upgrade\server", "max_phone", [
+                ["request", 2],
+                ["updateForfait", 2],
+                ["deleteCallHistory", 2],
+                ["insertCallHistory", 2]
+            ], 3.1],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["deleteMessageHistory", 2],
+                ["insertMessageHistory", 2],
+                ["updatePhone", 2]
+            ], 3.1]
+        ]],
+        ["Max_Settings_Phone", [
+            ["\Phone_Numbers\client", "max_phone", [
+                ["buysim", -2],
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["setupCellPhone", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2]
+            ], 2.0],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["saveCellPhone", 2],
+                ["request", 2],
+                ["updatePhone", 2],
+                ["getRealTime", 2],
+                ["cellPhoneRequest", 2, "init_client_remoteExec", ["player"]]
+            ], 2.0],
+            ["\Phone_Numbers\client", "max_phone", [
+                ["buysim", -2],
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["setupCellPhone", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["clientMessage", -2]
+            ], 2.1],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["saveCellPhone", 2],
+                ["request", 2],
+                ["updatePhone", 2],
+                ["getRealTime", 2],
+                ["cellPhoneRequest", 2, "init_client_remoteExec", ["player"]]
+            ], 2.1],
+            ["\Phone_Numbers\client", "max_phone", [
+                ["buysim", -2],
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["findInContacts", -2],
+                ["clientMessage", -2]
+            ], 3.0],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["deleteMessageHistory", 2],
+                ["insertMessageHistory", 2],
+                ["request", 2, "init_client_remoteExec", ["player"]],
+                ["updatePhone", 2]
+            ], 3.0],
+            ["\Phone_Numbers\client", "max_phone", [
+                ["buysim", -2],
+                ["sendMSG", -2],
+                ["resetContact", -2],
+                ["removeContact", -2],
+                ["addContact", -2],
+                ["messagesMenu", -2],
+                ["cellphone", -2],
+                ["deleteMessage", -2],
+                ["requestAdd", -2],
+                ["lbChanged", -2],
+                ["replyMessage", -2],
+                ["findInContacts", -2],
+                ["clientMessage", -2]
+            ], 3.1],
+            ["\Phone_Numbers\server", "max_phone", [
+                ["deleteMessageHistory", 2],
+                ["insertMessageHistory", 2],
+                ["request", 2, "init_client_remoteExec", ["player"]],
+                ["updatePhone", 2]
+            ], 3.1]
+        ]],
+        ["FC_Settings_SpeedCam", [
+            ["\speed_camera\client", "fc_speedcam", [
+                ["SpeedCamSetup", -2],
+                ["SpeedCamOpen", -2],
+                ["SpeedCamSet", -2],
+                ["SpeedCamAbort", -2],
+                ["SpeedCamSetSpeed", -2],
+                ["SpeedCamFlash", -2],
+                ["broadcastAddAction", -2, "init_client_spawn"]
+            ], 1.0],
+            ["\speed_camera\server", "fc_speedcam", [
+                ["SpeedCamLoop", -2],
+                ["SpeedCamUpdatePermis", -2]
+            ], 1.0],
+            ["\speed_camera\client", "fc_speedcam", [
+                ["SpeedCamSetup", -2],
+                ["SpeedCamOpen", -2],
+                ["SpeedCamSet", -2],
+                ["SpeedCamAbort", -2],
+                ["SpeedCamSetSpeed", -2],
+                ["SpeedCamFlash", -2],
+                ["broadcastAddAction", -2, "init_client_spawn"]
+            ], 1.1],
+            ["\speed_camera\server", "fc_speedcam", [
+                ["SpeedCamLoop", -2],
+                ["SpeedCamUpdatePermis", -2]
+            ], 1.1],
+            ["\speed_camera\client", "fc_speedcam", [
+                ["SpeedCamSetup", -2],
+                ["SpeedCamOpen", -2],
+                ["SpeedCamSet", -2],
+                ["SpeedCamAbort", -2],
+                ["SpeedCamSetSpeed", -2],
+                ["SpeedCamFlash", -2],
+                ["broadcastAddAction", -2, "init_client_spawn"]
+            ], 1.2],
+            ["\speed_camera\server", "fc_speedcam", [
+                ["SpeedCamLoop", -2],
+                ["SpeedCamUpdatePermis", -2]
+            ], 1.2]
+        ]],
+        ["The_Programmer_RepairSystem", [
+            ["\repair_system\client", "TheProgrammer", [
+                ["repairAction", -2],
+                ["repairAnalyzeAction", -2],
+                ["repairHitPoint", -2],
+                ["repairLbChange", -2],
+                ["repairAverageDamage", -2],
+                ["repairMenu", -2],
+                ["repairSwitch", -2],
+                ["repairTakeJob", -2]
+            ], 1.0],
+            ["\repair_system\client", "TheProgrammer", [
+                ["repairAction", -2],
+                ["repairAnalyzeAction", -2],
+                ["repairHitPoint", -2],
+                ["repairLbChange", -2],
+                ["repairAverageDamage", -2],
+                ["repairMenu", -2],
+                ["repairSwitch", -2],
+                ["repairTakeJob", -2]
+            ], 1.1]
+        ]],
+        ["CfgDynamicMarketPrice", [
+            ["\Dynamic_Market\client", "theprogrammer", [
+                ["bourseReturnTime", -2],
+                ["bourseSendData", -2],
+                ["bourseViewInit", -2],
+                ["bourseInitClient", -2, "init_client_spawn"],
+                ["bourseViewSelectChange", -2],
+                ["getTranslation", -2]
+            ], 1.0],
+            ["\Dynamic_Market\server", "theprogrammer", [
+                ["bourseCalcul", 2],
+                ["bourseGetBufferData", 2],
+                ["bourseGetData", 2],
+                ["bourseInit", 2, "init_server"],
+                ["bourseMinMax", 2],
+                ["bourseServer", 2],
+                ["bourseTime", 2],
+                ["bourseVariables", 2]
+            ], 1.0],
+            ["\Dynamic_Market\client", "theprogrammer", [
+                ["bourseSendData", -2],
+                ["bourseViewInit", -2],
+                ["bourseInitClient", -2, "init_client_spawn"],
+                ["bourseViewSelectChange", -2]
+            ], 1.1],
+            ["\Dynamic_Market\server", "theprogrammer", [
+                ["bourseCalcul", 2],
+                ["bourseGetBufferData", 2],
+                ["bourseGetData", 2],
+                ["bourseInit", 2, "init_server"],
+                ["bourseMinMax", 2],
+                ["bourseServer", 2],
+                ["bourseVariables", 2]
+            ], 1.1]
+        ]]
+    ]
+]
